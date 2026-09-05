@@ -1,21 +1,14 @@
-//
-//  ContentView.swift
-//  Demo
-//
-//  Created by SHIH-YING PAN on 2026/9/5.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Color(red: 0.97, green: 0.965, blue: 0.955)
+                .ignoresSafeArea()
+            FoxIllustration()
+                .aspectRatio(1, contentMode: .fit)
+                .padding(12)
         }
-        .padding()
     }
 }
 
